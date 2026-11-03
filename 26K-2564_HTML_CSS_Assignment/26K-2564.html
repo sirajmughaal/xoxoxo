@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26K-2564 - HTML and CSS Tasks</title>
+    <link rel="stylesheet" href="26K-2564.css">
+</head>
+<body>
+    <header class="page-header" id="top">
+        <h1>HTML and CSS Assignment</h1>
+        <p>Roll Number: 26K-2564</p>
+        <p class="small-note">A collection of HTML and CSS practice tasks</p>
+    </header>
+
+    <nav class="main-nav">
+        <a href="#task1">Task 1</a>
+        <a href="#task2">Task 2</a>
+        <a href="#task3">Task 3</a>
+        <a href="#task4">Task 4</a>
+        <a href="#task5">Task 5</a>
+        <a href="#task6">Task 6</a>
+        <a href="#task7">Task 7</a>
+        <a href="#task8">Task 8</a>
+        <a href="#task9">Task 9</a>
+    </nav>
+
+    <main>
+        <section class="task-section" id="task1">
+            <h2>Task 1: Registration Form</h2>
+            <p>Fill in the details below to create a sample account.</p>
+            <form class="registration-form" action="#" method="get">
+                <div class="form-grid">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter first name" required>
+
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter last name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+
+                    <span class="form-label">Gender</span>
+                    <div class="inline-options">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                    </div>
+
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="">Choose a country</option>
+                        <option>Pakistan</option>
+                        <option>United States</option>
+                        <option>United Kingdom</option>
+                        <option>Canada</option>
+                    </select>
+
+                    <span class="form-label">Newsletter</span>
+                    <label class="checkbox-label"><input type="checkbox" name="newsletter"> Subscribe to Newsletter</label>
+                </div>
+                <button type="submit" class="primary-button">Submit</button>
+            </form>
+        </section>
+
+        <section class="task-section" id="task2">
+            <h2>Task 2: Student Information Form</h2>
+            <p>This form follows the yellow form layout shown in the assignment.</p>
+            <form class="student-form" action="#" method="get">
+                <div class="student-row">
+                    <label for="family-name">Family name</label>
+                    <input id="family-name" name="family-name" type="text" placeholder="Family name">
+                </div>
+                <div class="student-row">
+                    <label for="other-names">Other names</label>
+                    <input id="other-names" name="other-names" type="text" placeholder="Other names">
+                </div>
+                <div class="student-row">
+                    <label for="address">Address</label>
+                    <input id="address" name="address" type="text" placeholder="Address">
+                </div>
+                <div class="student-row">
+                    <label for="suburb">Suburb</label>
+                    <select id="suburb" name="suburb">
+                        <option value="">-- Select suburb --</option>
+                        <option>Gulshan</option>
+                        <option>Clifton</option>
+                        <option>North Nazimabad</option>
+                    </select>
+                </div>
+                <div class="student-row">
+                    <label for="state">State/Territory</label>
+                    <input id="state" name="state" type="text">
+                </div>
+
+                <div class="student-row group-row">
+                    <span>Course info</span>
+                    <div class="choice-list">
+                        <label><input type="checkbox" name="course" value="engineering"> Engineering</label>
+                        <label><input type="checkbox" name="course" value="it"> IT</label>
+                        <label><input type="checkbox" name="course" value="law"> Law</label>
+                        <label><input type="checkbox" name="course" value="medicine"> Medicine</label>
+                        <label><input type="checkbox" name="course" value="nursing"> Nursing</label>
+                    </div>
+                </div>
+
+                <div class="student-row group-row">
+                    <span>Degree</span>
+                    <div class="choice-list">
+                        <label><input type="radio" name="degree" value="diploma"> Diploma</label>
+                        <label><input type="radio" name="degree" value="degree"> Degree</label>
+                        <label><input type="radio" name="degree" value="honours"> Honours</label>
+                        <label><input type="radio" name="degree" value="masters"> Masters</label>
+                        <label><input type="radio" name="degree" value="phd"> PhD</label>
+                    </div>
+                </div>
+
+                <div class="student-row comments-row">
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </div>
+                <div class="student-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="task-section" id="task3">
+            <h2>Task 3: Links and Moving Message</h2>
+            <p>Use these links to move to different parts of this page:</p>
+            <ul class="link-list">
+                <li><a href="#task1">Go to Registration Form</a></li>
+                <li><a href="#task5">Go to Timetable</a></li>
+                <li><a href="#top">Go to the top of the page</a></li>
+            </ul>
+            <div class="moving-message">
+                <marquee direction="left" scrollamount="5">Welcome to my HTML and CSS assignment!</marquee>
+            </div>
+        </section>
+
+        <section class="task-section" id="task4">
+            <h2>Task 4: Train Schedule Table</h2>
+            <p>A sample table with dummy train information.</p>
+            <div class="table-wrap">
+                <table class="train-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Name of train</th>
+                            <th rowspan="2">Place</th>
+                            <th rowspan="2">Destination</th>
+                            <th rowspan="2">Train No.</th>
+                            <th colspan="2">Time</th>
+                            <th rowspan="2">Fare (PKR)</th>
+                        </tr>
+                        <tr><th>Arrival</th><th>Departure</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Green Line</td><td>Karachi</td><td>Lahore</td><td>5</td><td>08:00</td><td>08:30</td><td>5,500</td></tr>
+                        <tr><td>Tezgam</td><td>Karachi</td><td>Rawalpindi</td><td>7</td><td>10:00</td><td>10:20</td><td>4,800</td></tr>
+                        <tr><td>Awam Express</td><td>Karachi</td><td>Peshawar</td><td>13</td><td>14:00</td><td>14:30</td><td>4,200</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="task-section" id="task5">
+            <h2>Task 5: Weekly Class Timetable</h2>
+            <div class="table-wrap">
+                <table class="timetable">
+                    <thead>
+                        <tr><th>Day</th><th>09:00 - 10:00</th><th>10:00 - 11:00</th><th>11:00 - 12:00</th><th>12:00 - 01:00</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><th>Monday</th><td>Programming</td><td>ICT</td><td>English</td><td class="break-cell">Break</td></tr>
+                        <tr><th>Tuesday</th><td>Calculus</td><td>Programming</td><td>Pakistan Studies</td><td class="break-cell">Break</td></tr>
+                        <tr><th>Wednesday</th><td>ICT Lab</td><td>ICT Lab</td><td>English</td><td class="break-cell">Break</td></tr>
+                        <tr><th>Thursday</th><td>Programming</td><td>Calculus</td><td>Pakistan Studies</td><td class="break-cell">Break</td></tr>
+                        <tr><th>Friday</th><td>English</td><td>ICT</td><td>Calculus</td><td class="break-cell">Break</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="task-section" id="task6">
+            <h2>Task 6: Favorite Quote</h2>
+            <div class="quote-box">
+                <p>“The secret of getting ahead is getting started.”</p>
+                <span>— Mark Twain</span>
+            </div>
+        </section>
+
+        <section class="task-section movie-section" id="task7">
+            <h2>Task 7: Favorite Movie</h2>
+            <h3>Interstellar</h3>
+            <p><strong>Actor:</strong> Matthew McConaughey</p>
+            <p><strong>Description:</strong> Interstellar is a science-fiction movie about a group of explorers who travel through space in search of a place where humans may be able to live. It explores family, time, courage, and discovery.</p>
+        </section>
+
+        <section class="task-section" id="task8">
+            <h2>Task 8: Favorite Animals</h2>
+            <div class="animal-row">
+                <figure>
+                    <img src="images/cat.svg" alt="Simple illustration of a cat">
+                    <figcaption>Cat</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/elephant.svg" alt="Simple illustration of an elephant">
+                    <figcaption>Elephant</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/turtle.svg" alt="Simple illustration of a turtle">
+                    <figcaption>Turtle</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="task-section" id="task9">
+            <h2>Task 9: Page Layout Using Div Tags</h2>
+            <div class="layout-demo">
+                <div class="layout-header">This is header</div>
+                <div class="layout-columns">
+                    <div class="layout-left">Left<br>Content</div>
+                    <div class="layout-center">Center Content</div>
+                    <div class="layout-right">Right Content</div>
+                </div>
+                <div class="layout-footer">Footer</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>26K-2564 | HTML and CSS Assignment</p>
+        <a href="#top">Back to top</a>
+    </footer>
+</body>
+</html>

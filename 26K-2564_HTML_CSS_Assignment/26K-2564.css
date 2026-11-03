@@ -1,0 +1,435 @@
+/* Main stylesheet for 26K-2564 HTML and CSS assignment */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f5f9;
+    color: #222;
+    line-height: 1.5;
+}
+
+.page-header {
+    background-color: #183b56;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+.page-header h1 {
+    margin: 0 0 8px;
+}
+
+.page-header p {
+    margin: 4px;
+}
+
+.small-note {
+    color: #dce8f0;
+    font-size: 14px;
+}
+
+.main-nav {
+    background-color: #245b78;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 7px 12px;
+    border-radius: 4px;
+}
+
+.main-nav a:hover {
+    background-color: #12364b;
+}
+
+main {
+    width: 90%;
+    max-width: 1050px;
+    margin: 25px auto;
+}
+
+.task-section {
+    background-color: white;
+    padding: 22px;
+    margin-bottom: 24px;
+    border: 1px solid #d8e0e8;
+    border-radius: 8px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.05);
+}
+
+.task-section h2 {
+    color: #183b56;
+    margin-top: 0;
+    border-bottom: 2px solid #dce7ee;
+    padding-bottom: 8px;
+}
+
+.registration-form {
+    max-width: 700px;
+    margin: 20px auto 0;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 13px 15px;
+    align-items: center;
+}
+
+.form-grid > label,
+.form-label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #aebbc6;
+    border-radius: 4px;
+    font: inherit;
+    background-color: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #8bc3df;
+    border-color: #245b78;
+}
+
+.inline-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.inline-options label,
+.checkbox-label,
+.choice-list label {
+    font-weight: normal;
+}
+
+.primary-button {
+    margin-top: 18px;
+    padding: 10px 25px;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    background-color: #245b78;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background-color: #183b56;
+}
+
+/* Task 2 form: yellow background like the sample in the assignment */
+.student-form {
+    max-width: 650px;
+    margin: 15px auto 0;
+    padding: 20px;
+    background-color: #ffff99;
+    border: 1px solid #888;
+    color: #222;
+    font-size: 14px;
+}
+
+.student-row {
+    display: grid;
+    grid-template-columns: 145px 1fr;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.student-row input[type="text"],
+.student-row select {
+    max-width: 260px;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.choice-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+}
+
+.group-row {
+    align-items: start;
+    margin-top: 18px;
+}
+
+.comments-row {
+    align-items: start;
+    margin-top: 18px;
+}
+
+.comments-row textarea {
+    max-width: 100%;
+}
+
+.student-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.student-buttons button {
+    min-width: 120px;
+    padding: 6px 12px;
+    background-color: #f5f5f5;
+    border: 1px solid #777;
+    cursor: pointer;
+}
+
+.link-list a {
+    color: #12618a;
+}
+
+.link-list a:hover {
+    color: #c0392b;
+}
+
+.moving-message {
+    background-color: pink;
+    color: red;
+    padding: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Tables */
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px solid #555;
+    padding: 10px;
+}
+
+.train-table th {
+    background-color: #dce8f0;
+}
+
+.train-table tbody tr:nth-child(even) {
+    background-color: #f3f7fa;
+}
+
+.timetable th {
+    background-color: #245b78;
+    color: white;
+}
+
+.timetable td {
+    background-color: #edf4f8;
+}
+
+.timetable tbody tr:nth-child(even) td {
+    background-color: #dceaf2;
+}
+
+.timetable .break-cell {
+    background-color: #ffe7a8;
+    font-weight: bold;
+}
+
+.quote-box {
+    background-color: #fff4d6;
+    border: 3px solid #d6a63b;
+    padding: 22px;
+    max-width: 650px;
+    margin: 15px auto;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.quote-box p {
+    font-size: 21px;
+    font-style: italic;
+    margin: 0 0 10px;
+}
+
+.quote-box span {
+    color: #6b5420;
+}
+
+.movie-section {
+    background-color: #e9f3fb;
+}
+
+.movie-section h3 {
+    color: #a33b25;
+    font-size: 25px;
+}
+
+.movie-section p {
+    color: #244b63;
+}
+
+/* Animal images are local SVG files, so no internet is needed. */
+.animal-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.animal-row figure {
+    width: 200px;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.animal-row img {
+    width: 180px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 8px;
+    background-color: #f1f6f8;
+    border: 1px solid #d5e0e5;
+    border-radius: 6px;
+}
+
+.animal-row figcaption {
+    color: #183b56;
+}
+
+/* Task 9: three columns made with div elements */
+.layout-demo {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.layout-header,
+.layout-footer {
+    background-color: green;
+    color: white;
+    padding: 5px;
+}
+
+.layout-columns {
+    display: flex;
+    min-height: 220px;
+}
+
+.layout-left {
+    width: 20%;
+    background-color: #ff00e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout-center {
+    width: 60%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout-right {
+    width: 20%;
+    background-color: #00e600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-footer {
+    background-color: #183b56;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+.site-footer p {
+    margin: 0 0 5px;
+}
+
+.site-footer a {
+    color: #dce8f0;
+}
+
+@media (max-width: 650px) {
+    main {
+        width: 94%;
+    }
+
+    .task-section {
+        padding: 15px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .form-grid > label,
+    .form-label {
+        margin-top: 8px;
+    }
+
+    .student-row {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .layout-columns {
+        min-height: 180px;
+    }
+
+    .layout-left,
+    .layout-right {
+        width: 25%;
+        font-size: 12px;
+    }
+
+    .layout-center {
+        width: 50%;
+    }
+
+    .animal-row figure {
+        width: 145px;
+    }
+
+    .animal-row img {
+        width: 135px;
+        height: 120px;
+    }
+}
